@@ -1,0 +1,85 @@
+.custom-body {
+    background-image: url("../learn-bot/img/background.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.logo-login{
+    text-align: center;
+    margin-top: 49px;
+}
+
+.intro{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Lato";
+    margin-top: 22px;
+    margin-bottom: 48px;
+    font-size: 22px;
+}
+
+.form-box {
+    background-color:#FFFFFF;
+    font-family: "Lato";
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 400px;
+    height: 400px;
+    box-shadow: #013436 3px 4px;
+    align-items: center;
+}
+
+.button-form {
+    background-color: rgb(139, 204, 202);
+    height: 50px;
+    border: 0;
+    margin-top: 1em;
+    font-weight: bold;
+    border: 0;
+    width: 100%;
+}
+
+input.btn.btn-secondary {
+    background-color: #013436;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+#icon-user{
+    background-image:url("../learn-bot/img/icon-user.svg"); 
+    background-repeat: no-repeat; 
+    background-position: 12px 12px;
+    }
+
+    #icon-pass{
+        background-image:url("../learn-bot/img/icon-pass.svg"); 
+        background-repeat: no-repeat; 
+        background-position: 12px 12px;
+        }
+
+@media screen and (max-width: 750px) {
+    .form-content {
+        flex-wrap: wrap;
+    }
+}
+
+input.form-control {
+    width: 300px;
+    height: 50px;
+    background-color: #e5e5e5; 
+    font-size: 14px;
+    color: #013436;
+}
+
+.submit{
+    text-align: center;
+
+}
+
