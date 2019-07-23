@@ -1,85 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .custom-body {
-    background-image: url("../learn-bot/img/background.png");
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.logo-login{
-    text-align: center;
-    margin-top: 49px;
+.logo-login {
+  text-align: center;
+  margin-top: 49px;
 }
 
-.intro{
-    text-align: center;
-    color: #FFFFFF;
-    font-family: "Lato";
-    margin-top: 22px;
-    margin-bottom: 48px;
-    font-size: 22px;
+.intro {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Lato";
+  margin-top: 22px;
+  margin-bottom: 48px;
+  font-size: 22px;
 }
 
 .form-box {
-    background-color:#FFFFFF;
-    font-family: "Lato";
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    margin: 0 auto;
-    margin-top: 20px;
-    max-width: 400px;
-    height: 400px;
-    box-shadow: #013436 3px 4px;
-    align-items: center;
-}
-
-.button-form {
-    background-color: rgb(139, 204, 202);
-    height: 50px;
-    border: 0;
-    margin-top: 1em;
-    font-weight: bold;
-    border: 0;
-    width: 100%;
+  background-color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 400px;
+  height: 400px;
+  box-shadow: #013436 3px 4px;
+  align-items: center;
 }
 
 input.btn.btn-secondary {
-    background-color: #013436;
-    margin: 0 auto;
-    max-width: 400px;
-    border-radius: 25px;
-    align-items: center;
+  background-color: #013436;
+  border-radius: 25px;
+  align-items: center;
+  width: 140px;
+  height: 50px;
 }
 
-#icon-user{
-    background-image:url("../learn-bot/img/icon-user.svg"); 
-    background-repeat: no-repeat; 
-    background-position: 12px 12px;
-    }
+#icon-user {
+  background-image: url('/img/icon-user.svg');
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+}
 
-    #icon-pass{
-        background-image:url("../learn-bot/img/icon-pass.svg"); 
-        background-repeat: no-repeat; 
-        background-position: 12px 12px;
-        }
+#icon-pass {
+  background-image: url("/img/icon-pass.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+}
 
 @media screen and (max-width: 750px) {
-    .form-content {
-        flex-wrap: wrap;
-    }
+  .form-content {
+    flex-wrap: wrap;
+  }
 }
 
 input.form-control {
-    width: 300px;
-    height: 50px;
-    background-color: #e5e5e5; 
-    font-size: 14px;
-    color: #013436;
+  width: 300px;
+  height: 50px;
+  background-color: #e5e5e5;
+  font-size: 14px;
+  color: #013436;
+  border-radius: 25px;
 }
 
-.submit{
+.submit {
+  text-align: center;
+}
+
+.header {
+  width: 100vw;
+  height: 150px;
+  background-color: #00595c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foto-user {
+  margin-top: 150px;
+  margin-left: 69px;
+}
+
+.logo-page {
+  margin-right: 69px;
+}
+.user-name > h1 {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin-top: 120px;
+  line-height: 70px;
+}
+
+.user-name > h3 {
+  color: #013436;
+  font-family: "Lato";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.section {
+    height: auto;
+  max-width: 1190px;
+  margin: 0px auto;
+  
+}
+
+.box-phases {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+  float: left;
+}
+
+.game > h2 {
+  margin-top: 130px;
+  color: #00595c;
+  font-family: "Lato";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.game > p {
+  color: #00595c;
+  font-family: "Abel";
+  font-size: 20px;
+}
+
+.box-quiz {
+  margin-top: 20px;
+  background-color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  max-width: 265px;
+  height: 173px;
+  border: solid 1px #d9d9d9;
+  box-shadow: 1px 1px #d9d9d9;
+  border-radius: 7px;
+  text-align: left;
+}
+
+.box-quiz:hover {
+  box-shadow: 3px 3px 3px 3px #cccccc;
+}
+
+.adjust {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.text-box > h4 {
+  font-size: 33px;
+  color: #00595c;
+}
+
+.box-quiz > p {
+  font-size: 18px;
+  color: #013436;
+  font-family: "Abel";
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.padlock-img{
+    width: 65px;
+    height: 69px;
+}
+
+
+.box-quiz2 {
+    margin-top: 20px;
+    background-color: #ffffff;
+    font-family: "Lato";
+    font-size: 16px;
+    max-width: 265px;
+    height: 173px;
+    border: solid 1px #d9d9d9;
+    box-shadow: 1px 1px #d9d9d9;
+    border-radius: 7px;
+    text-align: left;
+    opacity: 0.5;
+    margin-bottom: 30px;
+  }
+
+  .text-box2 > h4 {
+    font-size: 33px;
+    color: #999999;
+  }
+  
+  .box-quiz2 > p {
+    font-size: 18px;
+    color: #999999;
+    font-family: "Abel";
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+
+.box-ran{
     text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #ffffff;
+    width: 265px;
+    height: 392px;
+    border: solid 1px #d9d9d9;
+    box-shadow: 0px 3px #d9d9d9;
+    border-radius: 14.7px;
+    position: relative;
+    float: right;
+    
+}
+.nome-rank{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 
 }
+
+.circulo{
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    background-color: #007F83;
+    border-radius: 50%;
+    font-family: 'Lato';
+    font-size: 18px;
+    margin: 10px;
+}
+
+.box-ran>h1{
+    margin-top: 30px;
+    font-family: 'Lato';
+    font-size: 28px;
+    color :#013436;
+}
+
+.box-ran>h5{
+    font-family: 'Abel';
+    font-size: 16px;
+    color :#013436;
+    max-width:158px;
+    margin: 15px auto;
+}
+
+.number-rank{
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #1FB5BE;
+    font-weight: 900;
+    margin: 10px 10px 10px 20px;
+    
+}
+
+.names>p{
+    font-family: 'Abel';
+    font-size: 20px;
+    color:#013436;
+    margin-right: 5px;
+}
+
+.footer{
+    
+    position: relative;
+        clear:both;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    background-color: #00595C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#FFFF;
+    font-family: 'Lato';
+    font-size: 12px;
+}
+
+.footer-img>img{
+    width: 68px;
+    height: 32px;
+    margin-right: 31px;
+}
+
+.footer-text{
+    margin-left: 26px;
+}
+    
 
