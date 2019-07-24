@@ -3,8 +3,18 @@
   margin: 0;
 }
 
+hr {
+  color: #ededed;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0 18px 0 26px;
+}
+a:link{
+    text-decoration: none;
+}
+
 .custom-body {
-  background-image: url('../img/background.png');
+  background-image: url("img/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,13 +58,13 @@ input.btn.btn-secondary {
 }
 
 #icon-user {
-  background-image: url('/img/icon-user.svg');
+  background-image: url("img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 12px 12px;
 }
 
 #icon-pass {
-  background-image: url("/img/icon-pass.svg");
+  background-image: url("img/icon-pass.svg");
   background-repeat: no-repeat;
   background-position: 12px 12px;
 }
@@ -120,10 +130,9 @@ input.form-control {
 }
 
 .section {
-    height: auto;
+  height: auto;
   max-width: 1190px;
   margin: 0px auto;
-  
 }
 
 .box-phases {
@@ -139,12 +148,12 @@ input.form-control {
   margin-top: 130px;
   color: #00595c;
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: 2px;
 }
 
 .game > p {
-  color: #00595c;
+  color: #3E4748;
   font-family: "Abel";
   font-size: 20px;
 }
@@ -187,130 +196,193 @@ input.form-control {
   margin-top: 10px;
 }
 
-.padlock-img{
-    width: 65px;
-    height: 69px;
+.padlock-img {
+  width: 65px;
+  height: 69px;
 }
-
 
 .box-quiz2 {
-    margin-top: 20px;
-    background-color: #ffffff;
+  margin-top: 20px;
+  background-color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  max-width: 265px;
+  height: 173px;
+  border: solid 1px #d9d9d9;
+  box-shadow: 1px 1px #d9d9d9;
+  border-radius: 7px;
+  text-align: left;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+.text-box2 > h4 {
+  font-size: 33px;
+  color: #999999;
+}
+
+.box-quiz2 > p {
+  font-size: 18px;
+  color: #999999;
+  font-family: "Abel";
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.box-ran {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  width: 265px;
+  height: 392px;
+  border: solid 1px #d9d9d9;
+  box-shadow: 0px 3px #d9d9d9;
+  border-radius: 14.7px;
+  position: relative;
+  float: right;
+}
+.nome-rank {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.circulo {
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  background-color: #007f83;
+  border-radius: 50%;
+  font-family: "Lato";
+  font-size: 18px;
+  margin: 15px;
+}
+
+.box-ran > h1 {
+  margin-top: 30px;
+  font-family: "Lato";
+  font-size: 28px;
+  color: #013436;
+}
+
+.box-ran > h5 {
+  font-family: "Abel";
+  font-size: 16px;
+  color: #013436;
+  max-width: 158px;
+  margin: 20px auto;
+}
+
+.number-rank {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #1fb5be;
+  font-weight: 900;
+  margin: 10px 10px 10px 25px;
+}
+
+.names > p {
+  font-family: "Abel";
+  font-size: 20px;
+  color: #013436;
+  margin-right: 5px;
+}
+
+.footer {
+  position: relative;
+  clear: both;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #00595c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  font-family: "Lato";
+  font-size: 12px;
+}
+
+.footer-img > img {
+  width: 68px;
+  height: 32px;
+  margin-right: 31px;
+}
+
+.footer-text {
+  margin-left: 26px;
+}
+
+.grid {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+ 
+.grid h1 {
     font-family: "Lato";
-    font-size: 16px;
-    max-width: 265px;
-    height: 173px;
-    border: solid 1px #d9d9d9;
-    box-shadow: 1px 1px #d9d9d9;
-    border-radius: 7px;
-    text-align: left;
-    opacity: 0.5;
-    margin-bottom: 30px;
-  }
-
-  .text-box2 > h4 {
-    font-size: 33px;
-    color: #999999;
-  }
-  
-  .box-quiz2 > p {
-    font-size: 18px;
-    color: #999999;
-    font-family: "Abel";
-    margin-left: 20px;
-    margin-top: 10px;
-
-  }
-
-.box-ran{
+    font-size: 60px;
     text-align: center;
-    align-items: center;
-    align-content: center;
-    background-color: #ffffff;
-    width: 265px;
-    height: 392px;
-    border: solid 1px #d9d9d9;
-    box-shadow: 0px 3px #d9d9d9;
-    border-radius: 14.7px;
-    position: relative;
-    float: right;
-    
-}
-.nome-rank{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-
+    color: #00595C;
 }
 
-.circulo{
-    color: #ffffff;
-    width: 30px;
-    height: 30px;
-    background-color: #007F83;
-    border-radius: 50%;
-    font-family: 'Lato';
-    font-size: 18px;
-    margin: 10px;
+ 
+#score {
+    font-family: "Lato";
+    font-size: 60px;
+    text-align: center;
+    color: #00595C;
 }
-
-.box-ran>h1{
+ 
+.grid #question {
+    font-family: "Lato";
+    font-size: 40px;
+    color: #00595C;
+}
+ 
+.buttons {
     margin-top: 30px;
-    font-family: 'Lato';
-    font-size: 28px;
-    color :#013436;
+    text-align: center;
 }
-
-.box-ran>h5{
-    font-family: 'Abel';
-    font-size: 16px;
-    color :#013436;
-    max-width:158px;
-    margin: 15px auto;
-}
-
-.number-rank{
-    font-family: 'Lato';
-    font-size: 18px;
-    color: #1FB5BE;
-    font-weight: 900;
-    margin: 10px 10px 10px 20px;
-    
-}
-
-.names>p{
-    font-family: 'Abel';
-    font-size: 20px;
-    color:#013436;
-    margin-right: 5px;
-}
-
-.footer{
-    
-    position: relative;
-        clear:both;
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
+ 
+#btn0, #btn1, #btn2, #btn3 {
     background-color: #00595C;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color:#FFFF;
+    width: 250px;
+    font-size: 30px;
     font-family: 'Lato';
-    font-size: 12px;
+    color: #fff;
+    border: 1px solid#00595C;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #1FB5BE;
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+
+    color: #3E4748;
+  font-family: "Abel";
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0 50px 0;
 }
 
-.footer-img>img{
-    width: 68px;
-    height: 32px;
-    margin-right: 31px;
-}
+#credito{
+    color: #3E4748;
+  font-family: "Abel";
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0 50px 0;
 
-.footer-text{
-    margin-left: 26px;
 }
-    
-
