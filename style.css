@@ -129,6 +129,38 @@ input.form-control {
   letter-spacing: 2px;
 }
 
+.user-perfil > h1 {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin-top: 155px;
+  line-height: 70px;
+  margin-left: 1vw;
+}
+
+.user-perfil > h3 {
+  color: #013436;
+  font-family: "Lato";
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-left: 1vw;
+  margin-top: -3px;
+}
+
+
+.user-perfil > h5{
+  color: #013436;
+  font-family: "Lato";
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-left: 1vw;
+  text-decoration: overline;
+  text-decoration-color: #C9C9C9;
+}
+
+
+
 .section {
   height: auto;
   max-width: 1190px;
@@ -158,6 +190,24 @@ input.form-control {
   font-size: 20px;
 }
 
+.descricao{
+  margin-top: 130px
+}
+
+.descricao > h2 {
+  margin-top: 75px;
+  color: #00595c;
+  font-family: "Lato";
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.descricao > p {
+  color: #3E4748;
+  font-family: "Abel";
+  font-size: 20px;
+}
+
 .box-quiz {
   margin-top: 20px;
   background-color: #ffffff;
@@ -172,6 +222,10 @@ input.form-control {
 }
 
 .box-quiz:hover {
+  box-shadow: 3px 3px 3px 3px #cccccc;
+}
+
+.box-quiz3:hover {
   box-shadow: 3px 3px 3px 3px #cccccc;
 }
 
@@ -216,6 +270,26 @@ input.form-control {
   margin-bottom: 30px;
 }
 
+.box-quiz3 {
+  margin-top: 20px;
+  background-color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  max-width: 265px;
+  height: 173px;
+  border: solid 1px #d9d9d9;
+  box-shadow: 1px 1px #d9d9d9;
+  border-radius: 7px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.box-medal{
+  margin: 10px;
+  display: inline;
+  justify-content: center;
+}
+
 .text-box2 > h4 {
   font-size: 33px;
   color: #999999;
@@ -228,6 +302,15 @@ input.form-control {
   margin-left: 20px;
   margin-top: 10px;
 }
+
+.box-quiz3 > p {
+  font-size: 18px;
+  color: #013436;
+  font-family: "Abel";
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 
 .box-ran {
   text-align: center;
@@ -288,6 +371,118 @@ input.form-control {
   font-size: 20px;
   color: #013436;
   margin-right: 5px;
+}
+
+.faixa{
+  background: linear-gradient(to right, #0e3737 10%, #14605e 50%, #29AFAD 100%);
+  margin: 30px 0 50px;
+	position: relative;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+	clear: both;
+}
+
+.faixa > h2{
+  font-size: 43px;
+  color: #ffffff;
+  font-family: "Abel";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+
+div.corpo_faixa{
+	text-align: center;
+	color: #000;
+	padding: 10px 9px 10px 10px;
+	width: 100%;
+	margin-left: -10px;
+}
+ 
+div.corpo_faixa::before{
+  display: block;
+  width: 10px;
+  height: 0px;
+  position: absolute;
+  bottom: 83px;
+  left: -5px;
+  content: "";
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #0E3737;
+  transform: rotate(90deg);
+}
+ 
+div.corpo_faixa::after{
+  display: block;
+  width: 10px;
+  height: 0px;
+  position: absolute;
+  bottom: 83px;
+  right: -5px;
+  content: "";
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #707070;
+  transform: rotate(270deg);
+}
+
+.box-points{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  width: 265px;
+  height: 460px;
+  border: solid 1px #d9d9d9;
+  box-shadow: 0px 3px #d9d9d9;
+  border-radius: 14.7px;
+  position: relative;
+  float: right;
+  border-top: solid 5px #0e3737
+}
+
+.circulo {
+  height: 70px;
+  width: 70px;
+  background-color: #1FB5BE;
+  position: absolute;
+  text-align: center;
+  margin-top: 9vw;
+  margin-left: 120px;
+}
+
+.circulo > h2{
+  font-family: "Lato";
+  font-size: 30px;
+  color: white;
+  margin: 15px 2vw;
+  z-index: 2;
+}
+
+.imagem_prefil{
+  position: absolute;
+    text-align: center;
+    margin-top: 12vw;
+    margin-left: 104px;
+    z-index: 3;
+}
+
+.box-points > h5{
+  font-family: "Lato";
+  font-size: 17px;
+  color: #013436;
+  max-width: 240px;
+  margin: 17px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.box-points > h2 {
+  font-family: "Abel";
+  font-size: 43px;
+  color: #00595C;
+  max-width: 235px;
+  margin: 10px 1vw;
+  text-align: left;
 }
 
 .footer {
@@ -385,4 +580,35 @@ input.form-control {
     text-align: center;
     margin: 50px 0 50px 0;
 
+}
+
+
+@media screen and (max-width: 1300px) {
+  .circulo {
+    margin-top: 120px;
+  }
+
+  .imagem_prefil{
+    margin-top: 14vw;
+    margin-left: 105px;
+  }
+}
+
+
+@media screen and (max-width: 1115px) {
+  .imagem_prefil{
+    margin-top: 15vw;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .imagem_prefil{
+    margin-top: 16vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .imagem_prefil{
+    margin-top: 164px;
+  }
 }
