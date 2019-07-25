@@ -17,7 +17,7 @@ a:link{
   background-image: url("img/background.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  
 }
 
 .logo-login {
@@ -108,6 +108,11 @@ input.form-control {
 .foto-user {
   margin-top: 150px;
   margin-left: 69px;
+}
+
+.foto-user:hover{
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px #cccccc;
 }
 
 .logo-page {
@@ -206,6 +211,7 @@ input.form-control {
   color: #3E4748;
   font-family: "Abel";
   font-size: 20px;
+  text-align: justify;
 }
 
 .box-quiz {
@@ -437,10 +443,11 @@ div.corpo_faixa::after{
   border-radius: 14.7px;
   position: relative;
   float: right;
-  border-top: solid 5px #0e3737
+  border-top: solid 5px #0e3737;
+  margin-left: 20px; 
 }
 
-.circulo {
+.circulo1 {
   height: 70px;
   width: 70px;
   background-color: #1FB5BE;
@@ -448,9 +455,10 @@ div.corpo_faixa::after{
   text-align: center;
   margin-top: 9vw;
   margin-left: 120px;
+  border-radius: 50%;
 }
 
-.circulo > h2{
+.circulo1 > h2{
   font-family: "Lato";
   font-size: 30px;
   color: white;
@@ -533,7 +541,7 @@ div.corpo_faixa::after{
 }
  
 .grid #question {
-    font-family: "Lato";
+    font-family: "Abel";
     font-size: 40px;
     color: #00595C;
 }
@@ -584,7 +592,7 @@ div.corpo_faixa::after{
 
 
 @media screen and (max-width: 1300px) {
-  .circulo {
+  .circulo1 {
     margin-top: 120px;
   }
 

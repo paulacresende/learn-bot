@@ -8,7 +8,7 @@ function Quiz(questions) {
 Quiz.prototype.getQuestionIndex = function() {
     return this.questions[this.questionIndex];
 }
- 
+
 Quiz.prototype.guess = function(answer) {
     if(this.getQuestionIndex().isCorrectAnswer(answer)) {
         this.score++;
@@ -39,11 +39,9 @@ function populate() {
         showScores();
     }
     else {
-        // show question
         var element = document.getElementById("question");
         element.innerHTML = quiz.getQuestionIndex().text;
  
-        // show options
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
@@ -62,7 +60,6 @@ function guess(id, guess) {
         populate();
     }
 };
- 
  
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
@@ -86,8 +83,6 @@ var questions = [
    // new Question("Webdevtrick.com is about..", ["Web Design", "Graphic Design", "SEO & Development", "All"], "All")
 ];
  
-// create quiz
 var quiz = new Quiz(questions);
  
-// display quiz
 populate();
