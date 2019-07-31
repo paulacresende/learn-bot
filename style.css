@@ -116,8 +116,9 @@ input.form-control {
 }
 
 .logo-page {
-  margin-right: 69px;
+  margin-right: 139px;
 }
+.logo-page img{height: 60px;}
 .user-name > h1 {
   color: #ffffff;
   font-family: "Lato";
@@ -160,6 +161,7 @@ input.form-control {
   font-size: 15px;
   letter-spacing: 2px;
   margin-left: 1vw;
+  margin-top: 13px;
   text-decoration: overline;
   text-decoration-color: #C9C9C9;
 }
@@ -179,6 +181,7 @@ input.form-control {
   justify-content: space-around;
   max-width: 900px;
   float: left;
+  margin: 60px 0 80px 0;
 }
 
 .game > h2 {
@@ -193,6 +196,7 @@ input.form-control {
   color: #3E4748;
   font-family: "Abel";
   font-size: 20px;
+  margin-top: 15px; 
 }
 
 .descricao{
@@ -205,6 +209,7 @@ input.form-control {
   font-family: "Lato";
   font-size: 24px;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 .descricao > p {
@@ -212,6 +217,8 @@ input.form-control {
   font-family: "Abel";
   font-size: 20px;
   text-align: justify;
+  line-height: 1.7;
+  padding: 0 321px 0 0;
 }
 
 .box-quiz {
@@ -241,6 +248,15 @@ input.form-control {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+}
+
+.adjust div img{
+  margin-right: 30px;
+  height: 70px;
+}
+.adjust div img.padlock-img{
+  height: 30px;
+  width: 33px;
 }
 
 .text-box > h4 {
@@ -273,7 +289,7 @@ input.form-control {
   border-radius: 7px;
   text-align: left;
   opacity: 0.5;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .box-quiz3 {
@@ -347,8 +363,15 @@ input.form-control {
   font-family: "Lato";
   font-size: 18px;
   margin: 15px;
+  line-height: 26px;
 }
 
+.box-ran::before{
+  content: url('img/bg-gradiente.png');
+  position: absolute;
+  left: 34px;
+  top: -18px;
+}
 .box-ran > h1 {
   margin-top: 30px;
   font-family: "Lato";
@@ -431,6 +454,12 @@ div.corpo_faixa::after{
   transform: rotate(270deg);
 }
 
+.box-points::before{
+  content: url('img/bg-gradiente.png');
+  position: absolute;
+  left: 34px;
+  top: -18px;
+}
 .box-points{
   text-align: center;
   align-items: center;
@@ -443,7 +472,6 @@ div.corpo_faixa::after{
   border-radius: 14.7px;
   position: relative;
   float: right;
-  border-top: solid 5px #0e3737;
   margin-left: 20px; 
 }
 
@@ -462,15 +490,15 @@ div.corpo_faixa::after{
   font-family: "Lato";
   font-size: 30px;
   color: white;
-  margin: 15px 2vw;
+  margin: 17px 1vw;
   z-index: 2;
 }
 
 .imagem_prefil{
   position: absolute;
     text-align: center;
-    margin-top: 12vw;
-    margin-left: 104px;
+    margin-top: 11vw;
+    margin-left: 101px;
     z-index: 3;
 }
 
@@ -507,6 +535,7 @@ div.corpo_faixa::after{
   color: #ffff;
   font-family: "Lato";
   font-size: 12px;
+  padding: 20px 0;
 }
 
 .footer-img > img {
@@ -520,9 +549,11 @@ div.corpo_faixa::after{
 }
 
 .grid {
-    width: 800px;
+    width: 980px;
+    /*width: 800px;*/
     height: 500px;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
+
 }
  
 .grid h1 {
@@ -544,6 +575,7 @@ div.corpo_faixa::after{
     font-family: "Abel";
     font-size: 40px;
     color: #00595C;
+    padding: 0 150px 0 0;
 }
  
 .buttons {
@@ -552,20 +584,26 @@ div.corpo_faixa::after{
 }
  
 #btn0, #btn1, #btn2, #btn3 {
-    background-color: #00595C;
-    width: 250px;
-    font-size: 30px;
+    background-color: #EBEFEF;
+    width: 40%;
     font-family: 'Lato';
-    color: #fff;
-    border: 1px solid#00595C;
-    margin: 10px 40px 10px 0px;
-    padding: 10px 10px;
-    border-radius: 10px;
+    color: #00595C;
+    margin: 30px 0;
+    padding: 40px 10px;
+    border-radius: 3px;
+    font-size: 25px;
+    line-height: 29px;
 }
- 
+
+#btn0, #btn2{
+    float: left;
+} 
+#btn1, #btn3{
+    float: right;
+} 
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
     cursor: pointer;
-    background-color: #1FB5BE;
+    background-color: #D9F0F0;
 }
  
 #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
@@ -573,12 +611,14 @@ div.corpo_faixa::after{
 }
  
 #progress {
-
-    color: #3E4748;
+  color: #3E4748;
   font-family: "Abel";
-    font-size: 25px;
-    text-align: center;
-    margin: 50px 0 50px 0;
+  font-size: 25px;
+  margin: 60px 0;
+  padding: 10px;
+  text-decoration: underline;
+  font-weight: 900;
+  text-align: center;
 }
 
 #credito{
